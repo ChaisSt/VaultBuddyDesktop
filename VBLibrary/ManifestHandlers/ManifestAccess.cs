@@ -10,7 +10,7 @@ namespace VBLibrary
         public static string ReadData(string table, int num)
         {
             var sql = "SELECT json FROM " + table + " WHERE id = " + num;
-            using (SqliteConnection c = new SqliteConnection(@"Data Source= C:\Users\chais.strand\Documents\Personal Documents\VaultBuddyDesktop\VaultBuddyDesktop\VBLibrary\Exclude\Destiny2Manifest.db"))
+            using (SqliteConnection c = new SqliteConnection(@"Data Source= C:\Users\chais.strand\Documents\Personal Documents\VaultBuddyDesktop\VaultBuddyDesktop\VBLibrary\Destiny2Manifest.db"))
             {
                 c.Open();
                 using (SqliteCommand cmd = new SqliteCommand(sql, c))

@@ -104,7 +104,7 @@
     <Compile Include="Member Objects\Member.cs" />
     <Compile Include="Processors\MemberProcessor.cs" />
     <Compile Include="Member Objects\OddItem.cs" />
-    <Compile Include="Exclude\Secret.cs" />
+    <Compile Include="Secret.cs" />
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,10 +116,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Exclude\Destiny2Manifest.db" />
+    <None Include="Destiny2Manifest.db" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="NewFolder1\" />
     <Folder Include="obj\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
